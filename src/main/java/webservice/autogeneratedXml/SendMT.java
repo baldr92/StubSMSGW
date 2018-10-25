@@ -50,7 +50,7 @@ public class SendMT {
     protected String requesPassword;
     protected String requestBranch;
 
-    /**
+    /**fgrg
      * Gets the value of the phoneNum property.
      * 
      * @return

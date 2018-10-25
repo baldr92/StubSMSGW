@@ -39,7 +39,7 @@ public class SendMTResponse {
 
     /**
      * Gets the value of the sendMTResult property.
-     * 
+     * lk
      */
     public int getSendMTResult() {
         return sendMTResult;
