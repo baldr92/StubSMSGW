@@ -19,10 +19,10 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         MessageDispatcherServlet servlet = new MessageDispatcherServlet();
         servlet.setApplicationContext(applicationContext);
         servlet.setTransformWsdlLocations(true);
-        return new ServletRegistrationBean(servlet, "/ws/*");
+        return new ServletRegistrationBean(servlet, "/*");
     }
 
-    //http://localhost:8080/ws/SMSGW_MTSend.wsdl --bean name is set to 'services'
+    //http://localhost:8090/ws/SMSGW_MTSend.wsdl --bean name is set to 'services'
     @Bean(name = "SMSGW_MTSend")
     public Wsdl11Definition defaultWsdl11Definition() {
         SimpleWsdl11Definition wsdl11Definition = new SimpleWsdl11Definition();

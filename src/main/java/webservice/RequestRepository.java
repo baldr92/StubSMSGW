@@ -22,12 +22,14 @@ public class RequestRepository {
             mt.setRequestor("new_iib");
             mt.setRequesPassword("IIB@Vpbank");
             mt.setRequestBranch("VN0010001");
-            mt.setAcNum("11");
+            //mt.setAcNum("11");
 
             sendMTMap.put(mt.getClass().getName(), mt);
     }
-    public SendMT sendMsg(String name) {
-        Assert.notNull(name, "The country's name must not be null");
-        return sendMTMap.get(name);
-    }
+
+
+//    public SendMT sendMsg(int name) {
+//        Assert.notNull(name, "nullll");
+//        return sendMTMap.get(name);
+//    }
 }
